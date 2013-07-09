@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  table
+    tr
+      td
+        #serialport0
+        input(type='button', id='command', value='command')
+        input(type='button', id='continuing', value='continuing')
+        input(type='button', id='close', value='close')
+        #list
